@@ -160,6 +160,10 @@ module.exports = {
         firstResult: {
             selector:'//div[@class="_1WAWo"][1]',
             locateStrategy: 'xpath'
-        }
+        },
+        itemName: {
+            selector:'//div[@class="sc-jqCOkK hxTVNb sc-gqjmRU fptSCa"]',
+            locateStrategy:'xpath'
+        },
     }
 }

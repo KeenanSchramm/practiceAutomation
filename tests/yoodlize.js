@@ -243,9 +243,21 @@ module.exports = {
             .useXpath()
             .verify.containsText('@cardTitle', "Rubix Cube")
             .click('@firstResult')
-            .verify.containsText('//div[@class="sc-jqCOkK hxTVNb sc-gqjmRU fptSCa"]',"Rubix Cube")
+            .verify.containsText('@itemName',"Rubix Cube")
             .click('@picRightArrow')
             .click('@picLeftArrow')
             .verify.containsText('@price',"22")
     },
+    // //test is correct, BUG in site
+    // 'Horseopotamus Search': browser => {
+    //     yoodlizer
+    //         .setValue('@searchBar', ['Horseopotamus', browser.Keys.ENTER])
+    //         .verify.containsText('@searchCatagory',"Horseopotamus")
+    //         .verify.containsText('@cardTitle', "Horseopotamus")
+    //         .click('@firstResult')
+    //         .verify.containsText('@itemName',"Horseopotamus")
+    //         .click('@picRightArrow')
+    //         .click('@picLeftArrow')
+    //         .verify.containsText('@price',"6439")
+    // },
 }
